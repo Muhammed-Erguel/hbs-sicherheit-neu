@@ -1,0 +1,41 @@
+# Abhaengigkeiten
+node_modules/
+
+# Build-Output (wird von IONOS Deploy Now selbst erzeugt)
+dist/
+
+# Geheimnisse / lokale Umgebung
+.env
+.env.*
+*.pem
+*.key
+*.p12
+.npmrc
+
+# Bild- und Video-Master (grosse Rohdateien, nur Input fuer tools/optimize.mjs)
+assets/img/generated/
+assets/img/logo/_*.png
+
+# Test-Artefakte (Screenshots aus Playwright-Laeufen)
+tests/*.png
+test-results/
+playwright-report/
+blob-report/
+.playwright/
+
+# Logs / Caches
+*.log
+npm-debug.log*
+.cache/
+coverage/
+
+# Editor / Betriebssystem
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Claude-/MCP-spezifisch (kann lokale Pfade und Nutzerdaten enthalten)
+.claude/
+.mcp.json

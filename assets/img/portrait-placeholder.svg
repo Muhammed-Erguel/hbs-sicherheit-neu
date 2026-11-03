@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 600" width="480" height="600" role="img" aria-label="Platzhalter für ein Porträt">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#16293f"/>
+      <stop offset="1" stop-color="#0d1a2c"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" fill="none" stroke="#e2e8f0" stroke-opacity=".05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="480" height="600" fill="url(#bg)"/>
+  <rect width="480" height="600" fill="url(#grid)"/>
+  <!-- abstrahierte Person -->
+  <g fill="none" stroke="#4f92d6" stroke-opacity=".5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="240" cy="248" r="62"/>
+    <path d="M136 420c0-52 46-88 104-88s104 36 104 88"/>
+  </g>
+  <!-- Schild-Motiv -->
+  <path d="M240 470l40 18v40l-40 24-40-24v-40z" fill="#2f6fb0" fill-opacity=".22" stroke="#4f92d6" stroke-opacity=".35" stroke-width="3"/>
+</svg>

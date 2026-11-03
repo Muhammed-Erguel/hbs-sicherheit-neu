@@ -1,0 +1,37 @@
+<!-- HEADER -->
+<header id="site-header">
+  <nav class="nav" aria-label="Hauptnavigation">
+    <a href="{{ROOT_HREF}}" class="brand" aria-label="{{NAME}} – Startseite">
+      <img src="assets/img/logo-shield.png" width="48" height="48" alt="{{NAME}} Logo" loading="eager">
+      <span class="bt"><b>HBS Hegau-Bodensee</b><span>Sicherheit</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="{{ROOT}}#leistungen">Leistungen</a></li>
+      <li><a href="{{ROOT}}#ablauf">Arbeitsweise</a></li>
+      <li><a href="{{ROOT}}#team">Team</a></li>
+      <li><a href="{{ROOT}}#einsatzgebiet">Einsatzgebiet</a></li>
+      <li><a href="{{ROOT}}#kontakt">Kontakt</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="tel:{{TEL_HREF}}" class="nav-phone" aria-label="Anrufen: {{TEL}}">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>{{TEL}}</span>
+      </a>
+      <a href="{{ROOT}}#kontakt" class="btn btn-primary">Sicherheitsanfrage</a>
+      <button class="burger" id="burger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+<div class="mobile-menu-overlay" id="mobile-menu-overlay" aria-hidden="true"></div>
+<nav class="mobile-menu" id="mobile-menu" aria-label="Mobile Navigation">
+  <a href="{{ROOT}}#leistungen">Leistungen</a>
+  <a href="{{ROOT}}#ablauf">Arbeitsweise</a>
+  <a href="{{ROOT}}#team">Team</a>
+  <a href="{{ROOT}}#einsatzgebiet">Einsatzgebiet</a>
+  <a href="{{ROOT}}#kontakt">Kontakt</a>
+  <a href="tel:{{TEL_HREF}}" class="menu-phone" aria-label="Anrufen: {{TEL}}">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    <span>{{TEL}}</span>
+  </a>
+  <a href="{{ROOT}}#kontakt" class="btn btn-primary">Sicherheitsanfrage stellen</a>
+</nav>

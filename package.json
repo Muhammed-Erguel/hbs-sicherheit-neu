@@ -1,0 +1,28 @@
+{
+  "name": "hbs-sicherheit-neu",
+  "version": "1.0.0",
+  "description": "Website der Hegau-Bodensee Sicherheit (statisch, Node-Build)",
+  "main": "index.js",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "optimize": "node tools/optimize.mjs",
+    "serve": "node tools/serve.mjs 8125 dist",
+    "test:e2e": "node tests/site.spec.mjs && node tests/mobile-menu.spec.mjs && node tests/final.spec.mjs",
+    "test": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "dependencies": {
+    "ffmpeg-static": "^5.3.0",
+    "sharp": "^0.35.3"
+  },
+  "devDependencies": {
+    "playwright": "^1.62.1"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  }
+}

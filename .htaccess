@@ -1,0 +1,40 @@
+# HBS Hegau-Bodensee Sicherheit — Apache/IONOS Konfiguration (Entwurf)
+
+# --- MIME-Typen (Video/Bild/Manifest) ---
+AddType video/webm .webm
+AddType video/mp4 .mp4
+AddType image/avif .avif
+AddType image/webp .webp
+AddType application/manifest+json .webmanifest
+
+# --- Security-Header ---
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set Permissions-Policy "geolocation=(), microphone=(), camera=(), interest-cohort=()"
+  Header set X-Frame-Options "SAMEORIGIN"
+  # HSTS erst aktivieren, wenn HTTPS zuverlaessig laeuft:
+  # Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+</IfModule>
+
+# --- Caching statischer Medien ---
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/avif "access plus 6 months"
+  ExpiresByType image/webp "access plus 6 months"
+  ExpiresByType image/jpeg "access plus 6 months"
+  ExpiresByType video/webm "access plus 6 months"
+  ExpiresByType video/mp4 "access plus 6 months"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
+
+# --- Eigene 404-Seite ---
+ErrorDocument 404 /404.html
+
+# --- HTTPS erzwingen (aktivieren, sobald SSL aktiv ist) ---
+# <IfModule mod_rewrite.c>
+#   RewriteEngine On
+#   RewriteCond %{HTTPS} off
+#   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# </IfModule>

@@ -1,0 +1,13 @@
+{
+  "name": "{{NAME}}",
+  "short_name": "HBS Sicherheit",
+  "description": "Sicherheitsdienst für Objekte, Veranstaltungen und Baustellen in der Region Hegau-Bodensee.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a1424",
+  "theme_color": "#0a1424",
+  "icons": [
+    { "src": "assets/img/favicon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/img/favicon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "_hinweis": "ZENTRALE DATENQUELLE (Single Source of Truth). Nur hier pflegen. Felder mit _confirm:'REQUIRED' sind vor Live-Schaltung zu bestaetigen und duerfen NICHT als Tatsache im Frontend erscheinen.",
+
+  "name": "HBS Hegau-Bodensee Sicherheit",
+  "nameLegal": "Hegau-Bodensee Sicherheit",
+  "_nameHinweis": "name = Marke/Anzeige im Header und Footer. nameLegal = offizielle Firmierung, ausschliesslich fuer Impressum, Datenschutz und strukturierte Daten.",
+  "nameKurz": "HBS",
+  "rechtsform": "Einzelunternehmen",
+  "inhaber": "Enes Saran",
+
+  "adresse": {
+    "strasse": "Hohenhewenstraße 20",
+    "plz": "78224",
+    "ort": "Singen"
+  },
+
+  "email": "info@hbs-sicherheit.de",
+
+  "telefon": {
+    "wert": "+49 176 21870744",
+    "href": "+4917621870744",
+    "_zweck": "Normale Kontakt-/CTA-Nummer: Header, Mobile-Menue, Kontakt-CTA, Footer, mobile Anruf-Buttons."
+  },
+  "telefonLegal": {
+    "wert": "+49 179 1650578",
+    "href": "+491791650578",
+    "_zweck": "Offizielle Rufnummer ausschliesslich fuer Impressum und Datenschutzerklaerung. Abweichung zur CTA-Nummer ist beabsichtigt."
+  },
+
+  "ustId": "DE459018026",
+
+  "aufsichtsbehoerde": {
+    "name": "Landratsamt Konstanz",
+    "abteilung": "Amt für öffentliche Ordnung / Gewerberecht",
+    "strasse": "Benediktinerplatz 1",
+    "ort": "78467 Konstanz"
+  },
+
+  "erlaubnis34a": {
+    "absatz1": "Als Einzelunternehmer erbringe ich Sicherheitsdienstleistungen im Sinne des § 34a Gewerbeordnung (GewO).",
+    "absatz2": "Die Erlaubnis zur Ausübung des Bewachungsgewerbes wurde durch das Landratsamt Konstanz erteilt und wird durch dieses überwacht.",
+    "absatz3": "Die Gewerbeanmeldung erfolgte bei der Stadt Singen (Hohentwiel)."
+  },
+
+  "oeffnungszeiten": { "wert": null, "_confirm": "REQUIRED" },
+  "erreichbarkeit247": { "wert": null, "_confirm": "REQUIRED" },
+  "zertifizierungen": { "wert": null, "_confirm": "REQUIRED" },
+  "social": { "wert": [], "_confirm": "REQUIRED — nur nachweislich echte Profile verlinken, sonst weglassen" },
+  "hosting": { "wert": null, "_confirm": "REQUIRED — Anbieter, AV-Vertrag und Logfile-Speicherdauer fuer die Datenschutzerklaerung" },
+
+  "einsatzgebiet": ["Hegau", "Bodensee", "Singen und Umgebung", "Landkreis Konstanz"],
+
+  "leistungen": [
+    { "slug": "werk-und-objektschutz", "titel": "Werk- und Objektschutz", "kurz": "Schutz von Betrieben, Gewerbeobjekten und Immobilien durch Präsenz und Kontrolle." },
+    { "slug": "veranstaltungssicherheit", "titel": "Veranstaltungssicherheit", "kurz": "Einlass, Ordnung und Besucherlenkung für Veranstaltungen jeder Größe." },
+    { "slug": "baustellenueberwachung", "titel": "Baustellenüberwachung", "kurz": "Schutz von Baustellen, Material und Maschinen – besonders nachts." }
+  ],
+
+  "domain": "https://www.hbs-sicherheit.de",
+  "aiHinweis": "Einige verwendete Bildmotive sind KI-generierte Symbolbilder."
+}

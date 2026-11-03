@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Impressum – {{NAME}}</title>
+<meta name="description" content="Impressum und Anbieterkennzeichnung von {{NAME}}, {{ZIP_CITY}}.">
+<link rel="canonical" href="{{DOMAIN}}/impressum.html">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#0a1424">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="{{NAME}}">
+<meta property="og:title" content="Impressum – {{NAME}}">
+<meta property="og:description" content="Anbieterkennzeichnung nach § 5 DDG.">
+<meta property="og:url" content="{{DOMAIN}}/impressum.html">
+<meta property="og:image" content="{{DOMAIN}}/assets/img/og-image.jpg">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/img/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/favicon-180.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+{{> nav}}
+
+<main id="main">
+
+<section class="legal-hero">
+  <div class="wrap">
+    <span class="eyebrow">Rechtliches</span>
+    <h1>Impressum</h1>
+    <p class="lead">Anbieterkennzeichnung nach § 5 DDG (Digitale-Dienste-Gesetz).</p>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="legal-layout">
+
+    <nav class="legal-toc" aria-label="Inhalt dieser Seite">
+      <h2>Auf dieser Seite</h2>
+      <ol>
+        <li><a href="#anbieter">Anbieter</a></li>
+        <li><a href="#kontakt-impressum">Kontakt</a></li>
+        <li><a href="#verantwortlich-inhalt">Verantwortlich für den Inhalt</a></li>
+        <li><a href="#umsatzsteuer">Umsatzsteuer</a></li>
+        <li><a href="#aufsicht">Aufsicht &amp; § 34a GewO</a></li>
+        <li><a href="#streitbeilegung">Streitbeilegung</a></li>
+        <li><a href="#haftung">Haftung</a></li>
+        <li><a href="#urheberrecht">Urheberrecht &amp; Bilder</a></li>
+      </ol>
+    </nav>
+
+    <div>
+      <div class="legal-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/></svg>
+        <p><strong>Hinweis:</strong> Die Unternehmensangaben auf dieser Seite wurden vom Anbieter bestätigt. Der Text wurde nicht anwaltlich geprüft und ersetzt keine Rechtsberatung.</p>
+      </div>
+
+      <section class="legal-block shield-cut" id="anbieter">
+        <h2>Anbieter</h2>
+        <dl class="legal-dl">
+          <dt>Unternehmen</dt><dd>{{NAME_LEGAL}}</dd>
+          <dt>Rechtsform</dt><dd>{{LEGAL_FORM}}</dd>
+          <dt>Inhaber</dt><dd>{{OWNER}}</dd>
+          <dt>Anschrift</dt><dd>{{STREET}}<br>{{ZIP_CITY}}<br>Deutschland</dd>
+        </dl>
+      </section>
+
+      <section class="legal-block shield-cut" id="kontakt-impressum">
+        <h2>Kontakt</h2>
+        <dl class="legal-dl">
+          <dt>Telefon</dt><dd><a href="tel:{{TEL_LEGAL_HREF}}">{{TEL_LEGAL}}</a></dd>
+          <dt>E-Mail</dt><dd><a href="mailto:{{EMAIL}}">{{EMAIL}}</a></dd>
+        </dl>
+      </section>
+
+      <section class="legal-block shield-cut" id="verantwortlich-inhalt">
+        <h2>Verantwortlich für den Inhalt</h2>
+        <p>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV:</p>
+        <dl class="legal-dl">
+          <dt>Name</dt><dd>{{OWNER}}</dd>
+          <dt>Anschrift</dt><dd>{{STREET}}<br>{{ZIP_CITY}}</dd>
+        </dl>
+      </section>
+
+      <section class="legal-block shield-cut" id="umsatzsteuer">
+        <h2>Umsatzsteuer-Identifikationsnummer</h2>
+        <p>Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:</p>
+        <dl class="legal-dl">
+          <dt>USt-IdNr.</dt><dd>{{VAT_ID}}</dd>
+        </dl>
+      </section>
+
+      <section class="legal-block shield-cut" id="aufsicht">
+        <h2>Aufsichtsbehörde &amp; Erlaubnis nach § 34a GewO</h2>
+        <h3>Zuständige Aufsichtsbehörde</h3>
+        <dl class="legal-dl">
+          <dt>Behörde</dt><dd>{{AUTHORITY_NAME}}<br>{{AUTHORITY_DEPT}}</dd>
+          <dt>Anschrift</dt><dd>{{AUTHORITY_STREET}}<br>{{AUTHORITY_CITY}}</dd>
+        </dl>
+        <h3>Berufsrechtliche Angaben</h3>
+        <p>{{GEWO_1}}</p>
+        <p>{{GEWO_2}}</p>
+        <p>{{GEWO_3}}</p>
+        <p>Die berufsrechtlichen Regelungen sind einsehbar unter <a href="https://www.gesetze-im-internet.de/gewo/" rel="noopener">gesetze-im-internet.de/gewo</a> sowie in der Bewachungsverordnung (BewachV).</p>
+      </section>
+
+      <section class="legal-block shield-cut" id="streitbeilegung">
+        <h2>Verbraucherstreitbeilegung</h2>
+        <p>Wir sind nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen (§ 36 VSBG).</p>
+        <p>Ein Verweis auf die frühere EU-Online-Streitbeilegungsplattform entfällt, da diese von der Europäischen Kommission eingestellt wurde.</p>
+      </section>
+
+      <section class="legal-block shield-cut" id="haftung">
+        <h2>Haftung für Inhalte und Links</h2>
+        <p>Als Diensteanbieter sind wir für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Wir sind jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
+        <p>Unser Angebot enthält derzeit keine Links auf externe Websites Dritter. Sollten künftig externe Links ergänzt werden, gilt: Für deren Inhalte ist stets der jeweilige Anbieter verantwortlich. Zum Zeitpunkt der Verlinkung werden fremde Inhalte auf mögliche Rechtsverstöße überprüft.</p>
+      </section>
+
+      <section class="legal-block shield-cut" id="urheberrecht">
+        <h2>Urheberrecht &amp; Bildhinweis</h2>
+        <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet.</p>
+        <p><strong>Hinweis zu Bildmotiven:</strong> {{AI_NOTE}} Abgebildete Personen sind keine tatsächlichen Mitarbeiterinnen und Mitarbeiter und keine Kundinnen und Kunden von {{NAME}}.</p>
+        <p class="muted" style="margin-top:var(--sp-4);font-size:13.5px;">Stand: {{UPDATED}}</p>
+      </section>
+    </div>
+  </div>
+</div>
+
+</main>
+
+{{> footer}}
+</body>
+</html>
